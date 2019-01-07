@@ -1,0 +1,103 @@
+{block content}
+
+    <div class="userPage">
+        <div class="user">
+            {if $user}
+                <h1 style="margin-left: 13%;position: relative; margin-top: 4%">User profile</h1>
+                <h2 id="blink7" style="position: relative; margin-left: 13%" >
+                    Name
+                </h2>
+                <div class="blockForText">
+                    <p class="green">
+                        {$user->first_name} {$user->last_name}
+                    </p>
+                </div>
+
+                <h2 id="blink7" style="position: relative; margin-left: 13%">Nickname</h2>
+                <div class="blockForText">
+                    <p class="green">
+                        {$user->nickname}
+                    </p>
+                </div>
+
+                <h2 id="blink7" style="position: relative; margin-left: 13%">Date of birth</h2>
+                <div class="blockForText">
+                    <p class="green">
+                        {$user->date_of_birth}
+                    </p>
+                </div>
+                <div class="profileButton" style="margin-left: 14%; top: 20%">
+                    <li><a n:href="Edit:default" class="buttonStyleText" style="position: relative; right: 12px; top: 1px">Edit</a></li>
+                </div>
+                <div class="profileButton" style="margin-left: 57%; top: 15%">
+                    <li><a n:href="Homepage:default" class="buttonStyleText" style="position: relative; right: 12px; top: 1px">Back</a></li>
+                </div>
+            {else}
+                <h1 style="margin-left: 13%;position: relative; margin-top: 4%">User profile doesn't exist</h1>
+                <div class="profileButton" style="margin-left: 14%; top: 20%">
+                    <li><a n:href="Edit:default" class="buttonStyleText" style="position: relative; right: 12px; top: 1px">Edit</a></li>
+                </div>
+                <div class="profileButton" style="margin-left: 57%; top: 15%">
+                    <li><a n:href="Homepage:default" class="buttonStyleText" style="position: relative; right: 12px; top: 1px">Back</a></li>
+                </div>
+            {/if}
+
+        </div>
+    </div>
+    <style>
+
+    .profileButton {
+        position: relative;
+        width: 100px;
+        height: 30px;
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-color: blue;
+        box-shadow: 0 0 15px cyan;
+    }
+
+    p.green {
+        position: relative;
+        margin-left: 6%;
+        font-size: 20px;
+        color: #ffffff;
+        text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00;
+    }
+    @-webkit-keyframes pulsate {
+        100% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 3px #ffd, 0 0 8px #fff; }
+    }
+    @keyframes pulsate {
+        30% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 3px #ffd, 0 0 8px #fff; }
+    }
+    #blink7 {
+        margin-top: 6%;
+        mardin-bottom: 4%
+        color: rgb(245,245,245);
+        text-shadow: 0 -1px rgba(0,0,0,.1);
+        -webkit-animation: pulsate 1.2s linear infinite;
+        animation: pulsate 1.2s linear infinite;
+    }
+    .user {
+        position: relative;
+        margin-left: 40%;
+        margin-top: 10%;
+        width: 20%;
+        height: 600px;
+        border-radius: 18px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-color: blue;
+        box-shadow: 0 0 10px cyan;
+    }
+
+    .blockForText {
+        position: relative;
+        margin-left: 13.5%;
+        margin-top: 2%;
+        width: 70%;
+        height: 5%;
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-color: blue;
+        box-shadow: 0 0 10px cyan;
+    }
+</style>

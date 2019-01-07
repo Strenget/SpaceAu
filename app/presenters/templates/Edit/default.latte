@@ -1,0 +1,65 @@
+{block content}
+
+    {if $user}
+        <div class="userEditPage">
+            <div class="userPageBlock">
+                <h1 class="editUserLogo">
+                    Edit user
+                </h1>
+                <form n:name=formEditProfile class=form>
+                    <p><label n:name=last_name><p class="elem">New first name</p><input n:name=last_name size=25 class="styleDivInForm"></label>
+                    <p><label n:name=first_name><p class="elem">New last name</p><input n:name=first_name size=25 class="styleDivInForm"></label>
+                    <p><label n:name=nickname><p class="elem">New nickname</p><input n:name=nickname size=25 class="styleDivInForm"></label>
+                    <p><label n:name=date_of_birth><p class="elem">New date of birth</p><input n:name=date_of_birth size=25 class="styleDivInForm"></label>
+                    <p><input n:name=save class="buttonInEditUser">
+                    <div class="buttonStyle" style="position: relative; margin-left: 39.5%; margin-top: 5%">
+                        <li><a n:href="Homepage:default" class="buttonStyleText" style="position: relative; margin-left: 22%; top: 1px">Back</a></li>
+                    </div>
+                </form>
+            </div>
+        </div>
+    {else}
+        <h1 class="editUserLogo">
+            You must to enter or to register.
+        </h1>
+        <div class="buttonStyle" style="position: relative; margin-left: 39.5%; margin-top: 5%">
+            <li><a n:href="Sign:default" class="buttonStyleText" style="position: relative; margin-left: 22%; top: 1px">Sign</a></li>
+        </div>
+        <div class="buttonStyle" style="position: relative; margin-left: 39.5%; margin-top: 5%">
+            <li><a n:href="Registration:default" class="buttonStyleText" style="position: relative; margin-left: 22%; top: 1px">Registration</a></li>
+        </div>
+
+    {/if}
+
+<style>
+    .buttonInEditUser {
+        position: relative;
+        width: 37%;
+        height: 35px;
+        margin-top: 10%;
+        margin-left: 33%;
+        color: white;
+        background-color: rgba(45, 0, 64, 0.6);
+        border-radius: 2px;
+        border-color: blue
+    }
+    .editUserLogo {
+        position: relative;
+        margin-left: 36%;
+        margin-top: 5%;
+    }
+    .elem {
+        margin-left: 33%;
+        color: white;
+        font-family: Bahnschrift
+    }
+    .styleDivInForm {
+        position: relative;
+        margin-left: 33%;
+            background-color:rgba(0, 0, 0, 0.6);
+        color: white;
+        border-color: blue;
+        border-radius: 2px
+    }
+
+</style>

@@ -1,0 +1,47 @@
+{block content}
+    <div class="registrationPage" style="height: 969px;">
+        <div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+            <label for="languages"></label><select id="languages" style="margin-top: 10px; margin-left: 10px; background-color: rgba(45, 0, 64, 0.6); color: white; font-family: Bahnschrift; border-color: purple; border-radius: 2px;">
+                <option value="en">English</option>
+                <option value="cs">Czech</option>
+            </select>
+        </div>
+
+        <div class="registration">
+            <div style="width: 220px; height: 55px; margin-top: 20px; border-color: #006aeb; border-radius: 2px; font-weight: 100">
+                <p style="color: white; font-size: 39px; font-family: Alef">Registration</p>
+            </div>
+
+            <form n:name=formRegistration class=form>
+                <p><label n:name=email><p style="color: white;font-family: Bahnschrift">Email:</p><input n:name=email size=25 style="background-color:rgba(0, 0, 0, 0.6); color: white; border-color: blue; border-radius: 2px "></label>
+                <p><label n:name=pwd><p style="color: white;font-family: Bahnschrift">Password: </p><input n:name=pwd size=25 style="background-color:rgba(0, 0, 0, 0.6); color: white; border-color: blue; border-radius: 2px"></label>
+                <p><label n:name=pwd2><p style="color: white;font-family: Bahnschrift">Password again: </p><input n:name=pwd2 size=25 style="background-color:rgba(0, 0, 0, 0.6); color: white; border-color: blue; border-radius: 2px"></label>
+                <p><input n:name=register class="btn btn-default"  style="width: 213px; margin-top: 30px; color: white; background-color: rgba(45, 0, 64, 0.6); border-radius: 2px; border-color: blue">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            //Read the cookie, if it has been previously set
+            var language = $.cookie( 'language' );
+
+            //Set language to previously set value
+            !language || $('#languages').val( language );
+
+            //Set up an event listener to update the cookie whenever language is changed
+            $('#languages').on('change', function() {
+                language = this.value
+                $.cookie( 'language', language );
+            })
+            //Set cookie to default language when page loads;
+                .change();
+        });
+    </script>
+{/block}
+
+
+
+

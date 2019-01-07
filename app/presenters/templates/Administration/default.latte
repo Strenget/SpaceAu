@@ -1,0 +1,15 @@
+{block content}
+    <div class="createPostPage">
+        <div class="createPost">
+            <p style="color: white; position: relative; bottom: 50px; font-size: 45px; font-family: Alef; border-color: purple">Create new post</p>
+            <div class="adminHelp">
+                <form n:name=createPost class=form xmlns="http://www.w3.org/1999/html">
+                    <p style="width: 250px"><label n:name=title><p style="width: 250px; color: white;font-family: Bahnschrift; margin-left: 60px">Title</p><input n:name=title size=25 style="background-color:rgba(0, 0, 0, 0.6); color: white; border-color: blue; border-radius: 6px; margin-left: 60px"></label>
+                    <p><label n:name=topic><p style="color: white;font-family: Bahnschrift;margin-left: 60px">Topic</p><select n:name=topic style="background-color:rgba(0, 50, 0, 0.6); color: white; margin-left: 60px;  border-radius: 6px;"></select></label>
+                    <p><label n:name=postCz><p style="color: white;font-family: Bahnschrift; margin-left: 60px">PostCz</p><textarea n:name=postCz style="background-color:rgba(0, 0, 0, 0.6); color: white; margin-left: 60px;resize: none; width: 835px; height: 300px;  border-radius: 6px;"></textarea></label>
+                    <p><input n:name=createPost class="btn btn-default"  style="margin-bottom: 25px; margin-left: 60px;width: 213px; margin-top: 30px; color: white; background-color: rgba(45, 0, 64, 0.6); border-radius: 20px; border-color: blue">
+                </form>
+            </div>
+        </div>
+    </div>
+{/block}
