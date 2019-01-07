@@ -39,7 +39,9 @@ class Authenticator implements Security\IAuthenticator
      */
     public function authenticate(array $credentials) : Security\IIdentity
     {
-        [$email, $password] = $credentials;
+
+        $email = $credentials[0];
+        $password = $credentials[1];
 
         $row = $this->database->table('user')->where('email', $email)->fetch();
 
