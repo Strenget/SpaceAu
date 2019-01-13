@@ -14,21 +14,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/presenters/templates/Registration/default.latte">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#p#6;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Model/ArticleRepository.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="261">
@@ -49,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/presenters/templates/Homepage/default.latte">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
@@ -74,6 +59,21 @@
                 <element signature="e#1651#1657#0#HTML" expanded="true" />
                 <element signature="e#1729#1735#0#HTML" expanded="true" />
                 <element signature="e#1736#1742#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/presenters/templates/Sign/default.latte">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+              <folding>
+                <element signature="e#1110#1161#0#HTML" expanded="true" />
+                <element signature="e#1169#1267#0#HTML" expanded="true" />
+                <element signature="e#1420#1517#0#HTML" expanded="true" />
+                <element signature="e#1587#1719#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -181,6 +181,7 @@
         <option value="$PROJECT_DIR$/app/presenters/templates/@layout.latte" />
         <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/app/presenters/templates/Homepage/default.latte" />
+        <option value="$PROJECT_DIR$/app/presenters/templates/Sign/default.latte" />
       </list>
     </option>
   </component>
@@ -208,7 +209,7 @@
       <path value="$PROJECT_DIR$/vendor/nette/application" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="261" />
     <option name="y" value="212" />
     <option name="width" value="1604" />
@@ -396,12 +397,12 @@
       <workItem from="1546201226991" duration="51700000" />
       <workItem from="1546703553906" duration="40995000" />
       <workItem from="1547136204612" duration="5119000" />
-      <workItem from="1547294982934" duration="27603000" />
+      <workItem from="1547294982934" duration="28405000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128557000" />
+    <option name="totallyTimeSpent" value="129359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -482,13 +483,6 @@
     <entry file="file://$PROJECT_DIR$/www/css/solar.css" />
     <entry file="file://$PROJECT_DIR$/app/Model/CookiesManager.php" />
     <entry file="file://$PROJECT_DIR$/app/presenters/templates/Administration/defualt.latte" />
-    <entry file="file://$PROJECT_DIR$/app/presenters/templates/Sign/default.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="231" selection-start-line="5" selection-start-column="73" selection-end-line="5" selection-end-column="231" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/ProfilePresenter.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.389/style.css" />
     <entry file="file://$PROJECT_DIR$/app/presenters/templates/EditProfile.php" />
@@ -677,6 +671,19 @@
             <element signature="e#1651#1657#0#HTML" expanded="true" />
             <element signature="e#1729#1735#0#HTML" expanded="true" />
             <element signature="e#1736#1742#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/presenters/templates/Sign/default.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+          <folding>
+            <element signature="e#1110#1161#0#HTML" expanded="true" />
+            <element signature="e#1169#1267#0#HTML" expanded="true" />
+            <element signature="e#1420#1517#0#HTML" expanded="true" />
+            <element signature="e#1587#1719#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
