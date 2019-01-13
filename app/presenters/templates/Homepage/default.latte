@@ -23,7 +23,10 @@
 				</div>
 				<div class="content">
 					<p class="green" style="right: 5%"> Author: {$new->author}<br> Created at: {$new->date}</p>
-					<div style="color: white;">{$new->content|noescape}</div>
+					<div class="contentText" style="color: white">
+
+							{$new->content|noescape}
+					</div>
 				</div>
 			</div>
 		{/foreach}
