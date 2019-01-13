@@ -76,4 +76,11 @@ class RegistrationPresenter extends \Nette\Application\UI\Presenter
         return $form;
     }
 
+//    public function registrationFormSucceeded(UI\Form $form, \stdClass $values)
+//    {
+//        // ...
+//        $this->flashMessage('Byl jste úspěšně registrován.');
+//        $this->redirect('Homepage:default');
+//    }
+
 }

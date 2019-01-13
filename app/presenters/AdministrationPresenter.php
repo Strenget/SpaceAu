@@ -50,7 +50,8 @@ class AdministrationPresenter extends Presenter
 
         $form->addSelect('topic', 'Topic', $topics)->setRequired('Vyberte prosim topic');
 
-        $form->addTextArea('postCz', 'Post in Czech')->setRequired('Napiste text prosim');
+        $form->addTextArea('postCz', 'Text')
+            ->setAttribute('class', 'mceEditor');
 
         $form->addSubmit('createPost', 'Create post');
 
@@ -79,11 +80,10 @@ class AdministrationPresenter extends Presenter
 
         $form->onSuccess[] = function() use ($form, $authorName) {
             $values = $form->getValues();
-            $lastId = (int)$this->database->fetch('SELECT MAX("id") FROM "user"')['max'] + 1;
-            $this->database->table('post')->insert([
+            $lastId = (int)$this->database->fetch('SELECT MAX("id") FROM "posts"')['max'] + 1;
+            $this->database->table('posts')->insert([
                 'id' => $lastId,
-                'eng_version' => $values->postCz,
-                'cz_version' => $values->postCz,
+                'content' => $values->postCz,
                 'author' => $authorName,
                 'date' => date('Y-m-d H:i:s'),
                 'topic' => $values->topic,
