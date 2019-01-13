@@ -70,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/presenters/templates/Homepage/default.latte">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="255">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#li#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#!!top" expanded="true" />
@@ -95,7 +95,6 @@
                 <element signature="e#1651#1657#0#HTML" expanded="true" />
                 <element signature="e#1729#1735#0#HTML" expanded="true" />
                 <element signature="e#1736#1742#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,11 +132,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="334" column="1" selection-start-line="334" selection-start-column="1" selection-end-line="334" selection-end-column="1" />
+            <state relative-caret-position="280">
+              <caret line="326" column="14" selection-start-line="326" selection-start-column="14" selection-end-line="326" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -185,8 +184,8 @@
         <option value="$PROJECT_DIR$/app/presenters/templates/@layout.latte" />
         <option value="$PROJECT_DIR$/app/presenters/templates/Registration/default.latte" />
         <option value="$PROJECT_DIR$/app/presenters/templates/Profile/default.latte" />
-        <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/app/presenters/templates/Homepage/default.latte" />
+        <option value="$PROJECT_DIR$/www/css/style.css" />
       </list>
     </option>
   </component>
@@ -402,12 +401,12 @@
       <workItem from="1546201226991" duration="51700000" />
       <workItem from="1546703553906" duration="40995000" />
       <workItem from="1547136204612" duration="5119000" />
-      <workItem from="1547294982934" duration="24296000" />
+      <workItem from="1547294982934" duration="24459000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125250000" />
+    <option name="totallyTimeSpent" value="125413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="350" y="118" width="1604" height="699" extended-state="0" />
@@ -631,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="334" column="1" selection-start-line="334" selection-start-column="1" selection-end-line="334" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/presenters/templates/Profile/default.latte">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="671">
@@ -659,8 +651,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/presenters/templates/Homepage/default.latte">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="255">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#!!top" expanded="true" />
@@ -681,8 +673,14 @@
             <element signature="e#1651#1657#0#HTML" expanded="true" />
             <element signature="e#1729#1735#0#HTML" expanded="true" />
             <element signature="e#1736#1742#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="326" column="14" selection-start-line="326" selection-start-column="14" selection-end-line="326" selection-end-column="14" />
         </state>
       </provider>
     </entry>
