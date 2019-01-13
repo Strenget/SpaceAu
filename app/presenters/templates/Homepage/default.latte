@@ -18,39 +18,38 @@
 		</div>
 	</div>
 	<div class="blockWithPosts">
-		<div class="articles">
-			{foreach $news as $new}
-				<div class="blockForPost">
-					<div style="position: relative; left: 2%; top: 2%">
-						<h1 class="logo" style="padding-top: 1%">Title: {$new->title}</h1>
-					</div>
-					<div class="content">
-						<p class="green" style="right: 5%"> Author: {$new->author}<br> Created at: {$new->date}</p>
-						<div class="contentText"
-							<div style="color: white;">{$new->content|noescape}</div>
-						</div>
-					</div>
-					}
+		{foreach $news as $new}
+			<div class="blockForPost">
+				<div style="position: relative; left: 2%; top: 2%">
+					<h1 class="logo" style="padding-top: 1%">Title: {$new->title}</h1>
 				</div>
-			{/foreach}
-		</div>
-		<div style="position: fixed; left: 20%; top: 87%">
-			<div class="pagination" style="color: white">
-				{if !$paginator->isFirst()}
-					<a n:href="default, 1">First</a>
-					&nbsp;|&nbsp;
-					<a n:href="default, $paginator->page-1">Previous</a>
-					&nbsp;|&nbsp;
-				{/if}
-				Page {$paginator->page} of {$paginator->pageCount}
-				{if !$paginator->isLast()}
-					&nbsp;|&nbsp;
-					<a n:href="default, $paginator->page+1">Next</a>
-					&nbsp;|&nbsp;
-					<a n:href="default, $paginator->pageCount">Last</a>
-				{/if}
+				<div class="content">
+					<p class="green" style="right: 5%"> Author: {$new->author}<br> Created at: {$new->date}</p>
+					<div class="contentText"
+						<div style="color: white;">{$new->content|noescape}</div>
+					</div>
+				</div>
+				}
 			</div>
+		{/foreach}
+	</div>
+	<div style="position: fixed; left: 20%; top: 87%">
+		<div class="pagination" style="color: white">
+			{if !$paginator->isFirst()}
+				<a n:href="default, 1">First</a>
+				&nbsp;|&nbsp;
+				<a n:href="default, $paginator->page-1">Previous</a>
+				&nbsp;|&nbsp;
+			{/if}
+			Page {$paginator->page} of {$paginator->pageCount}
+			{if !$paginator->isLast()}
+				&nbsp;|&nbsp;
+				<a n:href="default, $paginator->page+1">Next</a>
+				&nbsp;|&nbsp;
+				<a n:href="default, $paginator->pageCount">Last</a>
+			{/if}
 		</div>
+	</div>
 </div>
 
 <script>
