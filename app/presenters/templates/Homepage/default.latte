@@ -23,13 +23,12 @@
 				</div>
 				<div class="content">
 					<p class="green" style="right: 5%"> Author: {$new->author}<br> Created at: {$new->date}</p>
-					<div class="contentText"
-						<div style="color: white;">{$new->content|noescape}</div>
-					</div>
+					<div style="color: white;">{$new->content|noescape}</div>
 				</div>
-				}
 			</div>
 		{/foreach}
+	</div>
+
 	<div style="position: fixed; left: 20%; top: 87%">
 		<div class="pagination" style="color: white">
 			{if !$paginator->isFirst()}
@@ -47,7 +46,7 @@
 			{/if}
 		</div>
 	</div>
-	</div>
+</div>
 {/block}
 
 
