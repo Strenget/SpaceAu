@@ -67,9 +67,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/presenters/templates/Sign/default.latte">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+            <state relative-caret-position="272">
+              <caret line="16" column="209" selection-start-line="16" selection-start-column="209" selection-end-line="16" selection-end-column="209" />
               <folding>
+                <element signature="e#1034#1069#0#HTML" expanded="true" />
                 <element signature="e#1110#1161#0#HTML" expanded="true" />
                 <element signature="e#1169#1267#0#HTML" expanded="true" />
                 <element signature="e#1420#1517#0#HTML" expanded="true" />
@@ -397,12 +398,12 @@
       <workItem from="1546201226991" duration="51700000" />
       <workItem from="1546703553906" duration="40995000" />
       <workItem from="1547136204612" duration="5119000" />
-      <workItem from="1547294982934" duration="28405000" />
+      <workItem from="1547294982934" duration="28707000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129359000" />
+    <option name="totallyTimeSpent" value="129661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -677,9 +678,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/presenters/templates/Sign/default.latte">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+        <state relative-caret-position="272">
+          <caret line="16" column="209" selection-start-line="16" selection-start-column="209" selection-end-line="16" selection-end-column="209" />
           <folding>
+            <element signature="e#1034#1069#0#HTML" expanded="true" />
             <element signature="e#1110#1161#0#HTML" expanded="true" />
             <element signature="e#1169#1267#0#HTML" expanded="true" />
             <element signature="e#1420#1517#0#HTML" expanded="true" />
