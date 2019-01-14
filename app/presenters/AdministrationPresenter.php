@@ -28,28 +28,22 @@ class AdministrationPresenter extends Presenter
     }
 
     /**
+     * Create form for page administration
      * @return Nette\Application\UI\Form
      */
     protected function createComponentCreatePost()
     {
-//        $cookie = $this->httpRequest->getCookie('language');
-//        if ($cookie)
-//        {
-//            $text = new TextManager($cookie);
-//        }
-//        else {
-//            $text = new TextManager('en');
-//        }
 
         $form = new \Nette\Application\UI\Form();
 
-
+        /** Create array for select topic */
         $topics = ['Space', 'Earth', 'Sun'];
 
         $form->addText('title', 'Title')->setRequired('text');
 
         $form->addSelect('topic', 'Topic', $topics);
 
+        /** Create text area */
         $form->addTextArea('postCz', 'Text')
             ->setAttribute('class', 'mceEditor');
 

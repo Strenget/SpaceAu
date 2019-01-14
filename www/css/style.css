@@ -224,6 +224,7 @@ html {
     background: #ebeff2;
 }
 body {
+    height: 100%;
     min-height: 100%;
     background: #ebeff2;
 }
@@ -243,6 +244,8 @@ body {
 }
 
 p.green {
+    right: 4%;
+    top: 2%;
     position: relative;
     margin-left: 6%;
     font-size: 20px;
@@ -295,22 +298,11 @@ h2.green {
 
 .content
 {
-    /*position: relative;*/
-    /*left: 2%;*/
-    /*top: 4%;*/
-    /*width: 96%;*/
-    /*height: 80%;*/
-    /*background-color: rgba(254, 254, 254, 0.1);*/
-    /*outline: none;*/
-    /*border-color: blue;*/
-    /*box-shadow: 0 0 10px cyan;*/
-    /*border-radius: 12px;*/
     position: relative;
     margin-top: 1%;
     left: 0;
     width: 100%;
     height: 87%;
-    /*height: %;*/
     background-color: rgba(254, 254, 254, 0.1);
     outline: none;
     border-color: blue;
@@ -326,29 +318,10 @@ h2.green {
     border-color: blue;
     box-shadow: 0 0 5px cyan;
     border-radius: 12px;
-    /*position: relative;*/
-    /*left: 0%;*/
-    /*top: 4%;*/
-    /*width: 100%;*/
-    /*height: 90%;*/
-    /*background-color: rgba(254, 254, 254, 0.1);*/
-    /*outline: none;*/
-    /*border-color: blue;*/
-    /*box-shadow: 0 0 10px cyan;*/
-    /*border-radius: 12px;*/
 }
 
 .blockForPost
 {
-    /*position: fixed;*/
-    /*left: 18.7%;*/
-    /*width: 65%;*/
-    /*height: 62%;*/
-    /*background-color: rgba(254, 254, 254, 0.1);*/
-    /*outline: none;*/
-    /*border-color: blue;*/
-    /*box-shadow: 0 0 10px cyan;*/
-    /*border-radius: 12px;*/
     position: relative;
     width: 100%;
     height: 100%;
@@ -357,4 +330,480 @@ h2.green {
     border-color: blue;
     box-shadow: 0 0 10px cyan;
     border-radius: 12px;
+}
+
+.adminI2
+{
+    margin-bottom: 25px;
+    margin-left: 60px;
+    width: 213px;
+    margin-top: 30px;
+    color: white;
+    background-color: rgba(45, 0, 64, 0.6);
+    border-radius: 20px;
+    border-color: blue
+}
+
+.adminD
+{
+    position:relative;
+    width: 85%;
+    margin-left: 6.5%;
+}
+
+.adminp1
+{
+    color: white;
+    position: relative;
+    font-size: 45px;
+    font-family: Alef;
+    border-color: purple
+}
+
+.adminp2
+{
+    width: 250px;
+    color: white;
+    font-family: Bahnschrift;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+.adminp3
+{
+    color: white;
+    font-family: Bahnschrift;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+.admins
+{
+    background-color:rgba(0, 50, 0, 0.6);
+    color: white;
+    margin-left: 60px;
+    border-radius: 6px;
+}
+
+.adminI
+{
+    background-color:rgba(0, 0, 0, 0.6);
+    color: white;
+    border-color: blue;
+    border-radius: 6px;
+    margin-left: 60px
+}
+
+.editA1
+{
+    position: relative;
+    margin-left: 22%;
+    top: 1px;
+    display: inline-block;
+    text-shadow: 1px 1px 1px white,
+    1px -1px 1px blue,
+    -1px 1px 1px blue,
+    -1px -1px 1px blue;
+    color: steelblue;
+    transition: all 1s;
+}
+
+.editA
+{
+    position: relative;
+    margin-left: 35%;
+    top: 1px;
+    display: inline-block;
+    text-shadow: 1px 1px 1px white,
+    1px -1px 1px blue,
+    -1px 1px 1px blue,
+    -1px -1px 1px blue;
+    color: steelblue;
+    transition: all 1s;
+}
+
+.editD
+{
+    position: relative;
+    width: 140px;
+    height: 30px;
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-color: blue;
+    box-shadow: 0 0 10px cyan;
+    margin-left: 39.5%;
+    margin-top: 5%;
+}
+
+.buttonInEditUser {
+    position: relative;
+    width: 37%;
+    height: 35px;
+    margin-top: 10%;
+    margin-left: 33%;
+    color: white;
+    background-color: rgba(45, 0, 64, 0.6);
+    border-radius: 2px;
+    border-color: blue
+}
+.editUserLogo {
+    position: relative;
+    margin-left: 36%;
+    margin-top: 5%;
+}
+.elem {
+    margin-left: 33%;
+    color: white;
+    font-family: Bahnschrift
+}
+.styleDivInForm {
+    position: relative;
+    margin-left: 33%;
+    background-color:rgba(0, 0, 0, 0.6);
+    color: white;
+    border-color: blue;
+    border-radius: 2px
+}
+
+#homeD7
+{
+    color: white;
+}
+
+.homeD6
+{
+    position: relative;
+    left: 2%;
+}
+
+.homeD5
+{
+    position:relative;
+    height: 63%;
+    margin-right: 2%;
+    margin-left: 2%;
+    border-color: blue;
+    box-shadow: 0 0 5px cyan;
+    border-radius: 12px;
+    overflow-y: auto;
+    background-color: rgba(254, 254, 254, 0.5);
+
+}
+
+.homed4
+{
+    position: relative;
+    left: 2%;
+    top: 2%;
+}
+
+.homeA3
+{
+    position: relative;
+    margin-left: 2px;
+    left: 8%;
+    display: inline-block;
+    text-shadow: 1px 1px 1px white,
+    1px -1px 1px blue,
+    -1px 1px 1px blue,
+    -1px -1px 1px blue;
+    color: steelblue;
+    transition: all 1s;
+}
+
+.homeD3
+{
+    position: relative;
+    width: 140px;
+    height: 30px;
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-color: blue;
+    box-shadow: 0 0 10px cyan;
+    margin-left: 90%;
+    bottom: 62%
+}
+.homeA2
+{
+    position: relative;
+    margin-left: 2px;
+    left: 33%;
+    display: inline-block;
+    text-shadow: 1px 1px 1px white,
+    1px -1px 1px blue,
+    -1px 1px 1px blue,
+    -1px -1px 1px blue;
+    color: steelblue;
+    transition: all 1s;
+}
+
+.homeD2
+{
+    left: 80%;
+    bottom:30%;
+    position: relative;
+    width: 140px;
+    height: 30px;
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-color: blue;
+    box-shadow: 0 0 10px cyan;
+}
+
+.homeA1
+{
+    position:  relative;
+    margin-left: 2px;
+    left: 19%;
+    display: inline-block;
+    text-shadow: 1px 1px 1px white,
+    1px -1px 1px blue,
+    -1px 1px 1px blue,
+    -1px -1px 1px blue;
+    color: steelblue;
+    transition: all 1s;
+}
+
+.homeD1
+{
+    left: 70%;
+    top: 3%;
+    position: relative;
+    width: 140px;
+    height: 30px;
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-color: blue;
+    box-shadow: 0 0 10px cyan;
+}
+
+.homeI3
+{
+    position: relative;
+    margin-left: 35%;
+    display: inline-block;
+    text-shadow: 1px 1px 1px white,
+    1px -1px 1px blue,
+    -1px 1px 1px blue,
+    -1px -1px 1px blue;
+    color: steelblue;
+    transition: all 1s;
+}
+
+.homeI2
+{
+    position: relative;
+    margin-left: 29%;
+    display: inline-block;
+    text-shadow: 1px 1px 1px white,
+    1px -1px 1px blue,
+    -1px 1px 1px blue,
+    -1px -1px 1px blue;
+    color: steelblue;
+    transition: all 1s;
+}
+
+.homeI
+{
+    position: relative;
+    width: 140px;
+    height: 30px;
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-color: blue;
+    box-shadow: 0 0 10px cyan;
+    left: 60%;
+    top: 36%;
+}
+
+.homeH
+{
+    font-size: 75px;
+    left: 35%;
+}
+
+#profileA2
+{
+    position: relative;
+    left: 5%;
+    top: 1px;
+}
+
+#profileD3
+{
+    margin-left: 57%;
+    top: 15%;
+}
+
+#profileD2
+{
+    padding-left: 15%;
+    top: 20%;
+}
+
+.profileH
+{
+    margin-left: 13%;
+    position: relative;
+    margin-top: 4%;
+}
+
+#profileA1
+{
+    position: relative;
+    margin-left: 31%;
+    top: 1px;
+}
+
+#profileD1
+{
+    margin-left: 57%;
+    top: 15%;
+}
+
+#profileA
+{
+    position: relative;
+    margin-left: 34%;
+    top: 1px;
+}
+
+#profileD
+{
+    margin-left: 14%;
+    top: 20%;
+}
+
+.profileH1
+{
+    position: relative;
+    margin-left: 13%;
+}
+
+.profilH
+{
+    margin-left: 13%;
+    position: relative;
+    margin-top: 4%;
+}
+
+.regI2
+{
+    width: 213px;
+    margin-top: 25%;
+    color: white;
+    background-color: rgba(45, 0, 64, 0.6);
+    border-radius: 2px;
+    border-color: blue;
+}
+
+.regP2
+{
+    color:white;
+    position: relative;
+    left: 15%;
+}
+
+.refD1
+{
+    margin-right: 34%;
+    font-family: Bahnschrift;
+}
+
+.regI
+{
+    background-color:rgba(0, 0, 0, 0.6);
+    color: white;
+    border-color: blue;
+    border-radius: 2px;
+}
+
+.regP1
+{
+    color: white;
+    font-family: Bahnschrift;
+}
+
+.regP
+{
+    color: white;
+    font-size: 39px;
+    font-family: Alef;
+}
+
+.regD
+{
+    width: 220px;
+    height: 55px;
+    margin-top: 20px;
+    border-color: #006aeb;
+    border-radius: 2px;
+    font-weight: 100;
+}
+
+.regL
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgba(45, 0, 64, 0.6);
+    color: white; font-family: Bahnschrift;
+    border-color: purple; border-radius: 2px;
+}
+
+.signI2
+{
+    width: 213px;
+    margin-top: 30px;
+    color: white;
+    background-color: rgba(45, 0, 64, 0.6);
+    border-radius: 2px;
+    border-color: blue;
+}
+
+.signI
+{
+    background-color:rgba(0, 0, 0, 0.6);
+    color: white;
+    border-color: blue;
+    border-radius: 2px;
+}
+
+.signP2
+{
+    color: white;
+    font-family: Bahnschrift,serif;
+}
+
+.signD2
+{
+    position: relative;
+    margin-top: 20%;
+}
+
+.sidnP
+{
+    color: white;
+    font-size: 39px;
+    font-family: Alef;
+    padding-left: 42px;
+    padding-top: 25px;
+}
+
+.signD
+{
+    width: 220px;
+    height: 55px;
+    margin-top: 20px;
+    border-color: #006aeb;
+    border-radius: 2px;
+    font-weight: 100;
+}
+
+.signL
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgba(45, 0, 64, 0.6);
+    color: white; font-family: Bahnschrift;
+    border-color: purple; border-radius: 2px;
 }

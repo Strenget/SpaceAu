@@ -1,26 +1,23 @@
 {block content}
     <div class="createPostPage">
         <div class="createPost">
-            <p style="color: white; position: relative; font-size: 45px; font-family: Alef; border-color: purple">Create new post</p>
+            <p class="adminp1">Create new post</p>
             <div class="adminHelp">
                 <form n:name=createPost class=form>
-                    <p style="width: 250px; color: white;font-family: Bahnschrift; margin-left: 7%; margin-top: 2%;">Title</p><input n:name=title size=25 style="background-color:rgba(0, 0, 0, 0.6); color: white; border-color: blue; border-radius: 6px; margin-left: 60px">
-                    <p style="color: white; font-family: Bahnschrift; margin-left: 7%; margin-top: 2%;">Topic</p>
-                    <select n:name=topic style="background-color:rgba(0, 50, 0, 0.6); color: white; margin-left: 60px;  border-radius: 6px;">
+                    <p class="adminp2">Title</p><input n:name=title size=25 class="adminI">
+                    <p class="adminp3">Topic</p>
+                    <select n:name=topic class="admins">
                         {foreach $news as $new}
-
                         {/foreach}
                     </select>
-                    <p style="color: white;font-family: Bahnschrift; margin-left: 7%; margin-top: 2%;">PostCz</p>
-                    <div style="position:relative; width: 85%; margin-left: 6.5%;">
+                    <p class="adminp3">PostCz</p>
+                    <div class="adminD">
                         <textarea class="myText" id="froala-editor" n:name=postCz >
                         </textarea>
                     </div>
-                    <input n:name=createPost class="btn btn-default"  style="margin-bottom: 25px; margin-left: 60px;width: 213px; margin-top: 30px; color: white; background-color: rgba(45, 0, 64, 0.6); border-radius: 20px; border-color: blue">
+                    <input n:name=createPost class="adminI2">
                 </form>
             </div>
         </div>
     </div>
-
-
 {/block}

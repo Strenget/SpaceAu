@@ -3,8 +3,8 @@
     <div class="userPage">
         <div class="user">
             {if $user}
-                <h1 style="margin-left: 13%;position: relative; margin-top: 4%">User profile</h1>
-                <h2 id="blink7" style="position: relative; margin-left: 13%" >
+                <h1 class="profilH">User profile</h1>
+                <h2 id="blink7" class="profileH1" >
                     Name
                 </h2>
                 <div class="blockForText">
@@ -13,34 +13,33 @@
                     </p>
                 </div>
 
-                <h2 id="blink7" style="position: relative; margin-left: 13%">Nickname</h2>
+                <h2 id="blink7" class="profileH1">Nickname</h2>
                 <div class="blockForText">
                     <p class="green">
                         {$user->nickname}
                     </p>
                 </div>
 
-                <h2 id="blink7" style="position: relative; margin-left: 13%">Date of birth</h2>
+                <h2 id="blink7" class="profileH1">Date of birth</h2>
                 <div class="blockForText">
                     <p class="green">
                         {$user->date_of_birth}
                     </p>
                 </div>
-                <div class="profileButton" style="margin-left: 14%; top: 20%">
-                    <a n:href="Edit:default" class="buttonStyleText" style="position: relative; margin-left: 34%; top: 1px">Edit</a>
+                <div class="profileButton" id="profileD">
+                    <a n:href="Edit:default" class="buttonStyleText" id="profileA">Edit</a>
                 </div>
-                <div class="profileButton" style="margin-left: 57%; top: 15%">
-                    <a n:href="Homepage:default" class="buttonStyleText" style="position: relative; margin-left: 31%; top: 1px">Back</a>
+                <div class="profileButton" id="profileD1">
+                    <a n:href="Homepage:default" class="buttonStyleText" id="profileA1">Back</a>
                 </div>
             {else}
-                <h1 style="margin-left: 13%;position: relative; margin-top: 4%">User profile doesn't exist</h1>
-                <div class="profileButton" style="padding-left: 15%; top: 20%">
-                    <a n:href="Edit:default" class="buttonStyleText" style="position: relative; top: 1px">Edit</a>
+                <h1 class="profileH">User profile doesn't exist</h1>
+                <div class="profileButton" id="profileD2">
+                    <a n:href="Edit:default" class="buttonStyleText">Edit</a>
                 </div>
-                <div class="profileButton" style="margin-left: 57%; top: 15%">
-                    <a n:href="Homepage:default" class="buttonStyleText" style="position: relative; left: 5%; top: 1px">Back</a>
+                <div class="profileButton" id="profileD3">
+                    <a n:href="Homepage:default" class="buttonStyleText" id="profileA2">Back</a>
                 </div>
             {/if}
-
         </div>
     </div>

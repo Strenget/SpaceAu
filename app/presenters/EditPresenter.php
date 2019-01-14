@@ -20,16 +20,23 @@ class EditPresenter extends Presenter
      */
     private $database;
 
+    /**
+     * EditPresenter constructor.
+     * @param \Nette\Database\Context $database
+     * @param \Nette\Http\Request $request
+     */
     public function __construct(\Nette\Database\Context $database, \Nette\Http\Request $request)
     {
         $this->database = $database;
     }
 
+    /** Create template user for page Edit */
     public function renderDefault()
     {
         $this->template->user = $this->getUser()->getIdentity();
     }
 
+    /** Create form */
     public function createComponentFormEditProfile()
     {
 
@@ -42,7 +49,7 @@ class EditPresenter extends Presenter
             $form->addText('nickname', 'nickName')->setRequired();
             $form->addText('date_of_birth')->setType('date');
             $form->addProtection('d');
-            $form->addSubmit('save', 'dsd');
+            $form->addSubmit('save', 'Save');
 
             $form->onSuccess[] = function() use ($form) {
                 $values = $form->getValues();

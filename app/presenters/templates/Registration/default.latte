@@ -3,28 +3,25 @@
         <div>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
             <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
-            <label for="languages"></label><select id="languages" style="margin-top: 10px; margin-left: 10px; background-color: rgba(45, 0, 64, 0.6); color: white; font-family: Bahnschrift; border-color: purple; border-radius: 2px;">
+            <label for="languages"></label><select id="languages" class="regL">
                 <option value="en">English</option>
                 <option value="cs">Czech</option>
             </select>
         </div>
 
         <div class="registration">
-            <div style="width: 220px; height: 55px; margin-top: 20px; border-color: #006aeb; border-radius: 2px; font-weight: 100">
-                <p style="color: white; font-size: 39px; font-family: Alef">Registration</p>
+            <div class="regD">
+                <p class="regP">Registration</p>
             </div>
-            <form n:name=formRegistration class=form>
-
-                <p style="color: white; font-family: Bahnschrift">{$form['email']->label}</p><input n:name=email size=25 style="background-color:rgba(0, 0, 0, 0.6); color: white; border-color: blue; border-radius: 2px ">
-                <p style="color: white;font-family: Bahnschrift">{$form['pwd']->label}</p><input n:name=pwd size=25 style="background-color:rgba(0, 0, 0, 0.6); color: white; border-color: blue; border-radius: 2px">
-                <div style="position: fixed; right: 43%" n:if="$form->hasErrors()" class="alert">
-                    <ul>
-                        <li style="color: white" n:foreach="$form->errors as $error">{$error}</li>
-                    </ul>
+            <form n:name=formRegistration name=validationRegistration class=form>
+                <p class="regP1">{$form['email']->label}</p><input n:name=email id="email" size=25 class="regI">
+                <p id='result'></p>
+                <p class="regP1">{$form['pwd']->label}</p><input n:name=pwd id="pwd" size=25 class="regI">
+                <p class="regP1">{$form['pwd2']->label}</p><input n:name=pwd2 id="pwd2" size=25 class="regI">
+                <div n:if="$form->hasErrors()" class="refD1">
+                    <p class="regP2" n:foreach="$form->errors as $error">{$error}</p>
                 </div>
-                <p style="color: white;font-family: Bahnschrift">{$form['pwd2']->label}</p><input n:name=pwd2 size=25 style="background-color:rgba(0, 0, 0, 0.6); color: white; border-color: blue; border-radius: 2px">
-
-                <input n:name=register class="btn btn-default"  style="width: 213px; margin-top: 25%; color: white; background-color: rgba(45, 0, 64, 0.6); border-radius: 2px; border-color: blue">
+                <input n:name=register id="validate"  class="regI2">
 
             </form>
         </div>
@@ -38,14 +35,38 @@
             //Set language to previously set value
             !language || $('#languages').val( language );
 
-            //Set up an event listener to update the cookie whenever language is changed
             $('#languages').on('change', function() {
-                language = this.value
+                language = this.value;
                 $.cookie( 'language', language );
             })
-            //Set cookie to default language when page loads;
                 .change();
         });
+
+        //Validate email by regex
+        function validateEmail(email) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
+
+        //Validate email function
+        function validate() {
+            var $result = $("#result");
+            var email = $("#email").val();
+            $result.text("");
+
+            if (validateEmail(email)) {
+                $result.text(email + " is valid : email)");
+                $result.css("color", "green");
+                document.getElementById("id").submit();
+            } else {
+                $result.text(email + " is not valid email");
+                $result.css("color", "red");
+            }
+            return false;
+        }
+
+        $("#validate").bind("click", validate);
+
     </script>
 {/block}
 

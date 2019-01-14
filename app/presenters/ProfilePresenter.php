@@ -32,57 +32,9 @@ class ProfilePresenter extends Presenter
         $this->database = $database;
     }
 
-    /**
-     * @return \Nette\Application\UI\Form
-     * @throws ApplicationException
-     */
-    protected function createComponentFormRegistration()
-    {
-        $cookie = $this->httpRequest->getCookie('language');
-        if ($cookie)
-        {
-            $text = new TextManager($cookie);
-        }
-        else {
-            $text = new TextManager('en');
-        }
-
-        $form = new \Nette\Application\UI\Form();
-
-
-
-
-
-
-
-        //        $form->addText('firstName', 'First Name')->setRequired();
-//        $form->addText('lastName', 'Last Name')->setRequired();
-//        $form->addText('nickname', 'nickname')->setRequired();
-//        $form->addText('date', 'Date')->setType('date');
-//        $form->addProtection('Chyba');
-//
-//
-//
-//        $form->onSuccess[] = function() use ($form) {
-//            $values = $form->getValues();
-//            $lastId = (int)$this->database->fetch('SELECT MAX("id") FROM "user"')['max'] + 1;
-//            $this->database->table('user')->insert([
-//                'id' => $lastId,
-//                'email' => $values->email,
-//                'password_hash' => \Nette\Security\Passwords::hash($values->pwd),
-//            ]);
-//        };
-
-//        $form->onSuccess[] = function() {
-//            $this->redirect('Homepage:default');
-//        };
-
-        return $form;
-    }
-
+    /** render template user */
     public function renderDefault()
     {
-
 
         if ($this->getUser()->getIdentity() == null)
         {
@@ -94,10 +46,5 @@ class ProfilePresenter extends Presenter
             $user = $this->database->fetch('SELECT * FROM "user_description" WHERE "id_user" = ?', $idUser);
             $this->template->user = $user;
         }
-
-//        dump($this->template->user);
-//        exit();
     }
-
-
 }

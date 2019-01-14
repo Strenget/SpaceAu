@@ -27,6 +27,7 @@ class TextManager
     }
 
     /**
+     * set text language from presenter
      * @param $locale
      * @throws ApplicationException
      */
@@ -40,6 +41,7 @@ class TextManager
         }
     }
 
+    /** Set language to English */
     private function setEn()
     {
         $this->registrationText = [
@@ -56,6 +58,7 @@ class TextManager
 
     }
 
+    /** set language to Czech */
     private function setCs()
     {
         $this->registrationText = [

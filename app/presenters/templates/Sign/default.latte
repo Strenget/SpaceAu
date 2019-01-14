@@ -1,22 +1,22 @@
 {block content}
-    <div class="signPage" style="height: 969px">
+    <div class="signPage">
         <div>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
             <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
-            <label for="languages"></label><select id="languages" style="margin-top: 10px; margin-left: 10px; background-color: rgba(45, 0, 64, 0.6); color: white; font-family: Bahnschrift; border-color: purple; border-radius: 2px;">
+            <label for="languages"></label><select id="languages" class="signL">
                 <option value="en">English</option>
                 <option value="cs">Czech</option>
             </select>
         </div>
         <div class="sign">
-            <div style="width: 220px; height: 55px; margin-top: 20px; border-color: #006aeb; border-radius: 2px; font-weight: 100">
-                <p style="color: white; font-size: 39px; font-family: Alef; padding-left: 42px; padding-top: 25px">Sign in</p>
+            <div class="signD">
+                <p class="sidnP">Sign in</p>
             </div>
             <form n:name=signInForm class=form>
-                <div style="position: relative; margin-top: 20%">
-                    <p style="color: white;font-family: Bahnschrift,serif">Email:</p><input n:name=email size=25 style="background-color:rgba(0, 0, 0, 0.6); color: white; border-color: blue; border-radius: 2px">
-                    <p style="color: white;font-family: Bahnschrift">Password: </p><input n:name=password_hash size=25 style="background-color:rgba(0, 0, 0, 0.6); color: white; border-color: blue; border-radius: 2px">
-                    <input n:name=send class="btn btn-default"  style="width: 213px; margin-top: 30px; color: white; background-color: rgba(45, 0, 64, 0.6); border-radius: 2px; border-color: blue">
+                <div class="signD2">
+                    <p class="signP2">Email:</p><input n:name=email size=25 class="signI">
+                    <p class="signP2">Password: </p><input n:name=password_hash size=25 class="signI">
+                    <input n:name=send class="signI2">
                 </div>
             </form>
         </div>

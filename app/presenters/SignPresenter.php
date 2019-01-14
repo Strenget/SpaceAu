@@ -42,4 +42,12 @@ class SignPresenter extends Nette\Application\UI\Presenter
         }
     }
 
+    /** log out function */
+    public function actionOut()
+    {
+        $this->getUser()->logout();
+        $this->flashMessage('Odhlášení bylo úspěšné.');
+        $this->redirect('Homepage:default');
+    }
+
 }

@@ -1,37 +1,39 @@
 {block content}
 <div class="homePage">
-	<h1 class="logo" style="font-size: 75px; left: 35%" >Space around us</h1>
-	<div class="blockHeader" style="top: 15px">
-		<div class="buttonStyle" style="left: 60%; top: 36%;">
-			<a n:href="Sign:default" class="buttonStyleText" style="position: relative; margin-left: 2px; left: 35%;">Login</a>
+	<h1 class="homeH" >Space around us</h1>
+	<div class="blockHeader">
+		<div class="homeI">
+			{if $user->loggedIn}
+				<a n:href="Sign:out" class="homeI2">Log out</a>
+			{else}
+				<a n:href="Sign:default" class="homeI3">Login</a>
+			{/if}
 		</div>
-		<div class="buttonStyle" style="left: 70%; top: 3%">
-			<a n:href="Registration:default" class="buttonStyleText" style="position:  relative; margin-left: 2px; left: 19%; ">Registration</a>
+		<div class="homeD1">
+			<a n:href="Registration:default" class="homeA1">Registration</a>
 		</div>
-		<div class="buttonStyle" style="left: 80%; bottom:30%">
-			<a n:href="Profile:default" class="buttonStyleText" style="position: relative; margin-left: 2px; left: 33%; ">Profile</a>
+		<div class="homeD2">
+			<a n:href="Profile:default" class="homeA2">Profile</a>
 		</div>
-		<div class="buttonStyle" style="margin-left: 90%; bottom: 62%">
-			<a n:href="Administration:default" class="buttonStyleText" style="position: relative; margin-left: 2px;left: 8%;">Create new post</a>
+		<div class="homeD3">
+			<a n:href="Administration:default" class="homeA3">Create new post</a>
 		</div>
 	</div>
 	<div class="blockWithPosts">
 		{foreach $news as $new}
-			<div style="position: relative; left: 2%; top: 2%">
-				<h1 class="logo" style="padding-top: 1%">Title: {$new->title}</h1>
+			<div class="homed4">
+				<h1>Title: {$new->title}</h1>
 			</div>
 
-			<p class="green" style="right: 4%; top: 2%">Author: {$new->author}<br> Created at: {$new->date}</p>
-			<p class="green"  style="right: 4%; top: 2%">Text</p>
-			<div class="contentText" style="position:relative; height: 63%; margin-right: 2%; margin-left: 2%; border-color: blue;
-    box-shadow: 0 0 5px cyan;
-    border-radius: 12px; overflow-y: auto; background-color: rgba(254, 254, 254, 0.5)">
+			<p class="green">Author: {$new->author}<br> Created at: {$new->date}</p>
+			<p class="green">Text</p>
+			<div class="homeD5">
 
 					{$new->content|noescape}
 			</div>
 		{/foreach}
-		<div style="position: relative; left: 2%" >
-			<div class="pagination" style="color: white">
+		<div class="homeD6">
+			<div class="pagination" id="homeD7">
 				{if !$paginator->isFirst()}
 					<a n:href="default, 1">First</a>
 					&nbsp;|&nbsp;
