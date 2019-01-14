@@ -44,11 +44,11 @@ class AdministrationPresenter extends Presenter
         $form = new \Nette\Application\UI\Form();
 
 
-        $topics = ['','Space', 'Earth', 'Sun'];
+        $topics = ['Space', 'Earth', 'Sun'];
 
         $form->addText('title', 'Title')->setRequired('text');
 
-        $form->addSelect('topic', 'Topic', $topics)->setRequired('Vyberte prosim topic');
+        $form->addSelect('topic', 'Topic', $topics);
 
         $form->addTextArea('postCz', 'Text')
             ->setAttribute('class', 'mceEditor');
