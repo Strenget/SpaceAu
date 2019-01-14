@@ -1,6 +1,6 @@
 {block content}
 <div class="homePage">
-	<h1 class="logo" style="font-size: 75px; left: 670px" >Space around us</h1>
+	<h1 class="logo" style="font-size: 75px; left: 34%" >Space around us</h1>
 	<div class="blockHeader" style="margin-top: 15px">
 		<div class="buttonStyle" style="margin-left: 60%; top: 36%">
 			<a n:href="Sign:default" class="buttonStyleText" style="position: relative; left: 35%; top: 1px">Login</a>
@@ -29,25 +29,26 @@
 				</div>
 			</div>
 		{/foreach}
-	</div>
-
-	<div style="position: fixed; left: 20%; top: 87%">
-		<div class="pagination" style="color: white">
-			{if !$paginator->isFirst()}
-				<a n:href="default, 1">First</a>
-				&nbsp;|&nbsp;
-				<a n:href="default, $paginator->page-1">Previous</a>
-				&nbsp;|&nbsp;
-			{/if}
-			Page {$paginator->page} of {$paginator->pageCount}
-			{if !$paginator->isLast()}
-				&nbsp;|&nbsp;
-				<a n:href="default, $paginator->page+1">Next</a>
-				&nbsp;|&nbsp;
-				<a n:href="default, $paginator->pageCount">Last</a>
-			{/if}
+		<div style="position: relative">
+			<div class="pagination" style="color: white">
+				{if !$paginator->isFirst()}
+					<a n:href="default, 1">First</a>
+					&nbsp;|&nbsp;
+					<a n:href="default, $paginator->page-1">Previous</a>
+					&nbsp;|&nbsp;
+				{/if}
+				Page {$paginator->page} of {$paginator->pageCount}
+				{if !$paginator->isLast()}
+					&nbsp;|&nbsp;
+					<a n:href="default, $paginator->page+1">Next</a>
+					&nbsp;|&nbsp;
+					<a n:href="default, $paginator->pageCount">Last</a>
+				{/if}
+			</div>
 		</div>
 	</div>
+
+
 </div>
 {/block}
 
