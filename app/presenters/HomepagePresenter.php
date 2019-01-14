@@ -21,7 +21,9 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
    }
 
 
-   /** render some templates and set paginator for homepage */
+    /** render some templates and set paginator for homepage
+     * @param int $page
+     */
     public function renderDefault($page = 1)
     {
         $newsCount = $this->articleRepository->getNewsCount();
