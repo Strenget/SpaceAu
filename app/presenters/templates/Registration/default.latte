@@ -1,8 +1,9 @@
 {block content}
-    <div class="registrationPage" style="height: 969px;">
+    <div class="registrationPage">
         <div>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
             <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+            {*Selector for change language*}
             <label for="languages"></label><select id="languages" class="regL">
                 <option value="en">English</option>
                 <option value="cs">Czech</option>
@@ -13,11 +14,12 @@
             <div class="regD">
                 <p class="regP">Registration</p>
             </div>
+            {*form for registration*}
             <form n:name=formRegistration name=validationRegistration class=form>
                 <p class="regP1">{$form['email']->label}</p><label for="email"></label><input n:name=email id="email" size=25 class="regI">
                 <p id='result'></p>
-                <p class="regP1">{$form['pwd']->label}</p><label for="pwd"></label><input n:name=pwd id="pwd" size=25 class="regI">
-                <p class="regP1">{$form['pwd2']->label}</p><label for="pwd2"></label><input n:name=pwd2 id="pwd2" size=25 class="regI">
+                <p class="regP1">{$form['pwd']->label}</p><input n:name=pwd  size=25 class="regI">
+                <p class="regP1">{$form['pwd2']->label}</p><input n:name=pwd2  size=25 class="regI">
                 <div n:if="$form->hasErrors()" class="refD1">
                     <p class="regP2" n:foreach="$form->errors as $error">{$error}</p>
                 </div>
@@ -27,46 +29,9 @@
         </div>
     </div>
 
+
     <script>
-        $(function() {
-            //Read the cookie, if it has been previously set
-            var language = $.cookie( 'language' );
-
-            //Set language to previously set value
-            !language || $('#languages').val( language );
-
-            $('#languages').on('change', function() {
-                language = this.value;
-                $.cookie( 'language', language );
-            })
-                .change();
-        });
-
-        //Validate email by regex
-        function validateEmail(email) {
-            var re = /\S+@\S+\.\S+/;
-            return re.test(email);
-        }
-
-        //Validate email function
-        function validate() {
-            var $result = $("#result");
-            var email = $("#email").val();
-            $result.text("");
-
-            if (validateEmail(email)) {
-                $result.text(email + " is valid : email)");
-                $result.css("color", "green");
-                document.getElementById("id").submit();
-            } else {
-                $result.text(email + " is not valid email");
-                $result.css("color", "red");
-            }
-            return false;
-        }
-
         $("#validate").bind("click", validate);
-
     </script>
 {/block}
 

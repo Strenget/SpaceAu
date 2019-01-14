@@ -19,6 +19,7 @@
 			<a n:href="Administration:default" class="homeA3">Create new post</a>
 		</div>
 	</div>
+	{*block for posts*}
 	<div class="blockWithPosts">
 		{foreach $news as $new}
 			<div class="homed4">
@@ -32,6 +33,7 @@
 					{$new->content|noescape}
 			</div>
 		{/foreach}
+		{*paginator for pages*}
 		<div class="homeD6">
 			<div class="pagination" id="homeD7">
 				{if !$paginator->isFirst()}
