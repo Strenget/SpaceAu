@@ -64,7 +64,7 @@ class RegistrationPresenter extends \Nette\Application\UI\Presenter
         }
 
         /** add email form with rule, that new email is not in db */
-        $form->addEmail('email', 'Email')
+        $form->addEmail('email', 'Email')->setRequired()
             ->addRule(Form::IS_NOT_IN, 'This mail was register before', $emailInString);
         $passwordInput = $form->addPassword('pwd', $text->registrationText[2])->setRequired($text->registrationText[4]);
         $form->addPassword('pwd2', $text->registrationText[5])->setRequired($text->registrationText[6])->addRule($form::EQUAL, $text->registrationText[7], $passwordInput);

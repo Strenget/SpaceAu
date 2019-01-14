@@ -16,7 +16,7 @@
             </div>
             {*form for registration*}
             <form n:name=formRegistration name=validationRegistration class=form>
-                <p class="regP1">Email: </p><input n:name=email class="regI" id="email" size=25>
+                <p class="regP1">Email: </p><input n:name=email class="regI" id="email" size=25 required>
                 <p id='result'></p>
                 <p class="regP1">{$form['pwd']->label}</p><input n:name=pwd  size=25 class="regI">
                 <p class="regP1">{$form['pwd2']->label}</p><input n:name=pwd2  size=25 class="regI">
