@@ -13,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/presenters/RegistrationPresenter.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="303">
@@ -22,11 +22,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/presenters/templates/Registration/default.latte">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="103" lean-forward="true" selection-start-line="18" selection-start-column="93" selection-end-line="18" selection-end-column="103" />
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -165,9 +165,9 @@
         <option value="$PROJECT_DIR$/app/presenters/templates/@layout.latte" />
         <option value="$PROJECT_DIR$/www/js/scripts.js" />
         <option value="$PROJECT_DIR$/app/presenters/templates/Homepage/default.latte" />
-        <option value="$PROJECT_DIR$/app/presenters/templates/Registration/default.latte" />
         <option value="$PROJECT_DIR$/app/presenters/HomepagePresenter.php" />
         <option value="$PROJECT_DIR$/app/presenters/RegistrationPresenter.php" />
+        <option value="$PROJECT_DIR$/app/presenters/templates/Registration/default.latte" />
       </list>
     </option>
   </component>
@@ -366,12 +366,12 @@
       <workItem from="1546201226991" duration="51700000" />
       <workItem from="1546703553906" duration="40995000" />
       <workItem from="1547136204612" duration="5119000" />
-      <workItem from="1547294982934" duration="61925000" />
+      <workItem from="1547294982934" duration="62141000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162879000" />
+    <option name="totallyTimeSpent" value="163095000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -603,13 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/presenters/templates/Registration/default.latte">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="103" lean-forward="true" selection-start-line="18" selection-start-column="93" selection-end-line="18" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/presenters/HomepagePresenter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -624,6 +617,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
           <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/presenters/templates/Registration/default.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
         </state>
       </provider>
     </entry>
