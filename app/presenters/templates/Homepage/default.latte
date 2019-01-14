@@ -1,35 +1,36 @@
 {block content}
 <div class="homePage">
-	<h1 class="logo" style="font-size: 75px; left: 34%" >Space around us</h1>
-	<div class="blockHeader" style="margin-top: 15px">
-		<div class="buttonStyle" style="margin-left: 60%; top: 36%">
-			<a n:href="Sign:default" class="buttonStyleText" style="position: relative; left: 35%; top: 1px">Login</a>
+	<h1 class="logo" style="font-size: 75px; left: 35%" >Space around us</h1>
+	<div class="blockHeader" style="top: 15px">
+		<div class="buttonStyle" style="left: 60%; top: 36%;">
+			<a n:href="Sign:default" class="buttonStyleText" style="position: relative; margin-left: 2px; left: 35%;">Login</a>
 		</div>
-		<div class="buttonStyle" style="margin-left: 70%; top: 6px">
-			<a n:href="Registration:default" class="buttonStyleText" style="position: relative; left: 19%; top: 1px">Registration</a>
+		<div class="buttonStyle" style="left: 70%; top: 3%">
+			<a n:href="Registration:default" class="buttonStyleText" style="position:  relative; margin-left: 2px; left: 19%; ">Registration</a>
 		</div>
-		<div class="buttonStyle" style="margin-left: 80%; bottom: 24px">
-			<a n:href="Profile:default" class="buttonStyleText" style="position: relative; left: 33%; top: 1px">Profile</a>
+		<div class="buttonStyle" style="left: 80%; bottom:30%">
+			<a n:href="Profile:default" class="buttonStyleText" style="position: relative; margin-left: 2px; left: 33%; ">Profile</a>
 		</div>
-		<div class="buttonStyle" style="margin-left: 90%; bottom: 54px">
-			<a n:href="Administration:default" class="buttonStyleText" style="position: relative; left: 8%; top: 1px">Create new post</a>
+		<div class="buttonStyle" style="margin-left: 90%; bottom: 62%">
+			<a n:href="Administration:default" class="buttonStyleText" style="position: relative; margin-left: 2px;left: 8%;">Create new post</a>
 		</div>
 	</div>
 	<div class="blockWithPosts">
 		{foreach $news as $new}
-			<div class="blockForPost">
-				<div style="position: relative; left: 2%; top: 2%">
-					<h1 class="logo" style="padding-top: 1%">Title: {$new->title}</h1>
-				</div>
-				<div class="content">
-					<p class="green" style="right: 5%"> Author: {$new->author}<br> Created at: {$new->date}</p>
-					<div class="contentText" style="color: white">
-							{$new->content|noescape}
-					</div>
-				</div>
+			<div style="position: relative; left: 2%; top: 2%">
+				<h1 class="logo" style="padding-top: 1%">Title: {$new->title}</h1>
+			</div>
+
+			<p class="green" style="right: 4%; top: 2%">Author: {$new->author}<br> Created at: {$new->date}</p>
+			<p class="green"  style="right: 4%; top: 2%">Text</p>
+			<div class="contentText" style="position:relative; height: 63%; margin-right: 2%; margin-left: 2%; border-color: blue;
+    box-shadow: 0 0 5px cyan;
+    border-radius: 12px; overflow-y: auto; background-color: rgba(254, 254, 254, 0.5)">
+
+					{$new->content|noescape}
 			</div>
 		{/foreach}
-		<div style="position: relative">
+		<div style="position: relative; left: 2%" >
 			<div class="pagination" style="color: white">
 				{if !$paginator->isFirst()}
 					<a n:href="default, 1">First</a>
