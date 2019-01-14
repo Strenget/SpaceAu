@@ -5,7 +5,12 @@
             <div class="adminHelp">
                 <form n:name=createPost class=form>
                     <p style="width: 250px; color: white;font-family: Bahnschrift; margin-left: 7%; margin-top: 2%;">Title</p><input n:name=title size=25 style="background-color:rgba(0, 0, 0, 0.6); color: white; border-color: blue; border-radius: 6px; margin-left: 60px">
-                    <p style="color: white; font-family: Bahnschrift; margin-left: 7%; margin-top: 2%;">Topic</p><select n:name=topic style="background-color:rgba(0, 50, 0, 0.6); color: white; margin-left: 60px;  border-radius: 6px;"></select>
+                    <p style="color: white; font-family: Bahnschrift; margin-left: 7%; margin-top: 2%;">Topic</p>
+                    <select n:name=topic style="background-color:rgba(0, 50, 0, 0.6); color: white; margin-left: 60px;  border-radius: 6px;">
+                        {foreach $news as $new}
+
+                        {/foreach}
+                    </select>
                     <p style="color: white;font-family: Bahnschrift; margin-left: 7%; margin-top: 2%;">PostCz</p>
                     <div style="position:relative; width: 85%; margin-left: 6.5%;">
                         <textarea class="myText" id="froala-editor" n:name=postCz >

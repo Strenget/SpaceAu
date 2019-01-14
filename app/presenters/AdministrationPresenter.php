@@ -44,7 +44,7 @@ class AdministrationPresenter extends Presenter
         $form = new \Nette\Application\UI\Form();
 
 
-        $topics = ['Space', 'Earth', 'Sun'];
+        $topics = ['','Space', 'Earth', 'Sun'];
 
         $form->addText('title', 'Title')->setRequired('text');
 
