@@ -1,4 +1,4 @@
-Space arount us
+Space around us
 =================
 
 This is a simple web about space.
