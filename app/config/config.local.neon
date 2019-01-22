@@ -3,5 +3,5 @@ parameters:
 
 database:
     dsn: 'pgsql:host=127.0.0.1;dbname=postgres'
-    dsn: 'pgsql:host=127.0.0.1;dbname=postgres'
-    user: postgres    password: root
+    user: postgres
+    password: Grisink2qwer
