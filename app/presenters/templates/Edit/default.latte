@@ -1,38 +1,38 @@
 {block content}
 
-    {*{if $user}*}
+    {if $user}
         <div class="userEditPage">
             <div class="userPageBlock">
                 <h1 class="editUserLogo">
                     Edit user
                 </h1>
                 <form n:name=formEditProfile class=form>
-                    {*<p class="elem">New first name</p><input n:name=last_name size=25 class="styleDivInForm">*}
-                    {*<p class="elem">New last name</p><input n:name=first_name size=25 class="styleDivInForm">*}
-                    {*<p class="elem">New nickname</p><input n:name=nickname size=25 class="styleDivInForm">*}
-                    {*<p class="elem">New date of birth</p><input n:name=date_of_birth size=25 class="styleDivInForm">*}
-                    {*<input n:name=save class="buttonInEditUser">*}
-                    {*<div class="editD">*}
-                        {*<a n:href="Homepage:default" class="editA">Back</a>*}
-                    {*</div>*}
+                    <p class="elem">New first name</p><input n:name=last_name size=25 class="styleDivInForm">
+                    <p class="elem">New last name</p><input n:name=first_name size=25 class="styleDivInForm">
+                    <p class="elem">New nickname</p><input n:name=nickname size=25 class="styleDivInForm">
+                    <p class="elem">New date of birth</p><input n:name=date_of_birth size=25 class="styleDivInForm">
+                    <input n:name=save class="buttonInEditUser">
+                    <div class="editD">
+                        <a n:href="Homepage:default" class="editA">Back</a>
+                    </div>
                 </form>
             </div>
         </div>
-    {*{else}*}
-    {*<div class="userEditPage">*}
-        {*<div class="userPageBlock">*}
-            {*<h1 class="editUserLogo">*}
-                {*Edit user*}
-            {*</h1>*}
-            {*<h1 class="editUserLogo">*}
-                {*You must to enter or to register.*}
-            {*</h1>*}
-            {*<div class="editD">*}
-                {*<a n:href="Sign:default" class="editA1">Sign</a>*}
-            {*</div>*}
-            {*<div class="editD">*}
-                {*<a n:href="Registration:default" class="editA1">Registration</a>*}
-            {*</div>*}
-        {*</div>*}
-    {*</div>*}
-    {*{/if}*}
+    {else}
+    <div class="userEditPage">
+        <div class="userPageBlock">
+            <h1 class="editUserLogo">
+                Edit user
+            </h1>
+            <h1 class="editUserLogo">
+                You must to enter or to register.
+            </h1>
+            <div class="editD">
+                <a n:href="Sign:default" class="editA1">Sign</a>
+            </div>
+            <div class="editD">
+                <a n:href="Registration:default" class="editA1">Registration</a>
+            </div>
+        </div>
+    </div>
+    {/if}
