@@ -2,6 +2,12 @@ parameters:
 
 
 database:
+<<<<<<< HEAD
     dsn: 'pgsql:host=127.0.0.1;dbname=postgres'
     user: postgres
     password: root
+=======
+	dsn: 'mysql:host=127.0.0.1;dbname=test'
+	user:
+	password:
+>>>>>>> aed584c25482e734eff893a9d6c21d9077878bbf
