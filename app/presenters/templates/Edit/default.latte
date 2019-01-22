@@ -7,11 +7,21 @@
                     Edit user
                 </h1>
                 <form n:name=formEditProfile class=form>
-                    <p class="elem">New first name</p><input n:name=last_name size=25 class="styleDivInForm">
-                    <p class="elem">New last name</p><input n:name=first_name size=25 class="styleDivInForm">
-                    <p class="elem">New nickname</p><input n:name=nickname size=25 class="styleDivInForm">
-                    <p class="elem">New date of birth</p><input n:name=date_of_birth size=25 class="styleDivInForm">
-                    <input n:name=save class="buttonInEditUser">
+
+                    {*<p class="regP1">Email: </p><input n:name=email class="regI" id="email" size=25 required>*}
+                    {*<p id='result'></p>*}
+                    {*<p class="regP1">{$form['pwd']->label}</p><input n:name=pwd  size=25 class="regI">*}
+                    {*<p class="regP1">{$form['pwd2']->label}</p><input n:name=pwd2  size=25 class="regI">*}
+                    {*<div n:if="$form->hasErrors()" class="refD1">*}
+                        {*<p class="regP2" n:foreach="$form->errors as $error">{$error}</p>*}
+                    {*</div>*}
+                    {*<input n:name=register id="validate"  class="regI2">*}
+
+                    <p><label n:name=last_name><p class="elem">New first name</p><input n:name=last_name size=25 class="styleDivInForm"></label>
+                    <p><label n:name=first_name><p class="elem">New last name</p><input n:name=first_name size=25 class="styleDivInForm"></label>
+                    <p><label n:name=nickname><p class="elem">New nickname</p><input n:name=nickname size=25 class="styleDivInForm"></label>
+                    <p><label n:name=date_of_birth><p class="elem">New date of birth</p><input n:name=date_of_birth size=25 class="styleDivInForm"></label>
+                    <p><input n:name=save class="buttonInEditUser">
                     <div class="editD">
                         <a n:href="Homepage:default" class="editA">Back</a>
                     </div>

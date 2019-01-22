@@ -2,7 +2,7 @@
 
     <div class="userPage">
         <div class="user">
-            {if $user}
+            {*{if $user}*}
                 <h1 class="profilH">User profile</h1>
                 <h2 id="blink7" class="profileH1" >
                     Name
@@ -32,14 +32,14 @@
                 <div class="profileButton" id="profileD1">
                     <a n:href="Homepage:default" class="buttonStyleText" id="profileA1">Back</a>
                 </div>
-            {else}
-                <h1 class="profileH">User profile doesn't exist</h1>
-                <div class="profileButton" id="profileD2">
-                    <a n:href="Edit:default" class="buttonStyleText">Edit</a>
-                </div>
-                <div class="profileButton" id="profileD3">
-                    <a n:href="Homepage:default" class="buttonStyleText" id="profileA2">Back</a>
-                </div>
-            {/if}
+            {*{else}*}
+                {*<h1 class="profileH">User profile doesn't exist</h1>*}
+                {*<div class="profileButton" id="profileD2">*}
+                    {*<a n:href="Edit:default" class="buttonStyleText">Edit</a>*}
+                {*</div>*}
+                {*<div class="profileButton" id="profileD3">*}
+                    {*<a n:href="Homepage:default" class="buttonStyleText" id="profileA2">Back</a>*}
+                {*</div>*}
+            {*{/if}*}
         </div>
     </div>
