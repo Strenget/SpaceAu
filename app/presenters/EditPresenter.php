@@ -56,10 +56,6 @@ class EditPresenter extends Presenter
                 $existDescription = $this->database->fetch('SELECT * FROM "user_description" WHERE "id_user" = ?', $this->getUser()->getIdentity()->getId());
                 if ($existDescription == null)
                 {
-                    if ($values->date_of_birth === "")
-                    {
-                        $values->date_od_birth = date("Y-m-d H:i:s");
-                    }
                     $lastId = (int)$this->database->fetch('SELECT MAX("id") FROM "user"')['max'] + 1;
                     $this->database->table('user_description')->insert([
                         'id' => $lastId,
@@ -67,22 +63,18 @@ class EditPresenter extends Presenter
                         'first_name' => $values->first_name,
                         'last_name' => $values->last_name,
                         'nickname' => $values->nickname,
-                        'date_of_birth' => $values->date_of_birth
+                        'date_of_birth' => $values->date_of_birth ? $values->date_of_birth : date("Y-m-d H:i:s")
                     ]);
                 }
                 else
                 {
-                    if ($values->date_of_birth === "")
-                    {
-                        $values->date_od_birth = date("Y-m-d H:i:s");
-                    }
                     $id = $existDescription['id'];
                     $this->database->query('UPDATE "user_description" SET', [
                         'id_user' => $this->getUser()->getIdentity()->getId(),
                         'first_name' => $values->first_name,
                         'last_name' => $values->last_name,
                         'nickname' => $values->nickname,
-                        'date_of_birth' => $values->date_of_birth
+                        'date_of_birth' => $values->date_of_birth ? $values->date_of_birth : date("Y-m-d H:i:s")
                     ], 'WHERE id = ?', $id);
                 }
             };
