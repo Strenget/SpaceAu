@@ -2,28 +2,28 @@
 
     <div class="userPage">
         <div class="user">
-            {*{if $user}*}
+            {if $user->loggedIn}
                 <h1 class="profilH">User profile</h1>
                 <h2 id="blink7" class="profileH1" >
                     Name
                 </h2>
                 <div class="blockForText">
                     <p class="green">
-                        {$user->first_name} {$user->last_name}
+                        {$userD->first_name} {$userD->last_name}
                     </p>
                 </div>
 
                 <h2 id="blink7" class="profileH1">Nickname</h2>
                 <div class="blockForText">
                     <p class="green">
-                        {$user->nickname}
+                        {$userD->nickname}
                     </p>
                 </div>
 
                 <h2 id="blink7" class="profileH1">Date of birth</h2>
                 <div class="blockForText">
                     <p class="green">
-                        {$user->date_of_birth}
+                        {$userD->date_of_birth}
                     </p>
                 </div>
                 <div class="profileButton" id="profileD">
@@ -32,14 +32,14 @@
                 <div class="profileButton" id="profileD1">
                     <a n:href="Homepage:default" class="buttonStyleText" id="profileA1">Back</a>
                 </div>
-            {*{else}*}
-                {*<h1 class="profileH">User profile doesn't exist</h1>*}
-                {*<div class="profileButton" id="profileD2">*}
-                    {*<a n:href="Edit:default" class="buttonStyleText">Edit</a>*}
-                {*</div>*}
-                {*<div class="profileButton" id="profileD3">*}
-                    {*<a n:href="Homepage:default" class="buttonStyleText" id="profileA2">Back</a>*}
-                {*</div>*}
-            {*{/if}*}
+            {else}
+                <h1 class="profileH">User profile doesn't exist</h1>
+                <div class="profileButton" id="profileD2">
+                    <a n:href="Edit:default" class="buttonStyleText">Edit</a>
+                </div>
+                <div class="profileButton" id="profileD3">
+                    <a n:href="Homepage:default" class="buttonStyleText" id="profileA2">Back</a>
+                </div>
+            {/if}
         </div>
     </div>

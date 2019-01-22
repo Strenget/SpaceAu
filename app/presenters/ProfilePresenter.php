@@ -38,13 +38,13 @@ class ProfilePresenter extends Presenter
 
         if ($this->getUser()->getIdentity() == null)
         {
-            $this->template->user = null;
+            $this->template->userD = null;
         }
         else
         {
             $idUser = $this->getUser()->getIdentity()->getId();
             $user = $this->database->fetch('SELECT * FROM "user_description" WHERE "id_user" = ?', $idUser);
-            $this->template->user = $user;
+            $this->template->userD = $user;
         }
     }
 }
