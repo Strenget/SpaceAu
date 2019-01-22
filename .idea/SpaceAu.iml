@@ -25,5 +25,11 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="jquery.cookie" level="application" />
+    <orderEntry type="library" name="quill" level="application" />
+    <orderEntry type="library" name="quill.core" level="application" />
+    <orderEntry type="library" name="tinymce" level="application" />
   </component>
 </module>

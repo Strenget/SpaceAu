@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="EN">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
+	<title>{ifset title}{include title|stripHtml} | {/ifset}SpaceAu</title>
+	<link rel="stylesheet" type="text/css" href="{$basePath}/css/style.css">
 
-	<title>{ifset title}{include title|stripHtml} | {/ifset}Nette Web</title>
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="{$basePath}/js/scripts.js"></script>
+	<script>
+
+
+	</script>
 </head>
 
 <body>
-	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
-
 	{include content}
-
-	{block scripts}
-	<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
-	{/block}
 </body>
 </html>
