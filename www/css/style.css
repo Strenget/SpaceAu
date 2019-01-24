@@ -5,6 +5,10 @@
     background-size: cover;
     background-image: url(../../www/pictures/Milky_way.jpg);
     background-color: #c7b39b;
+    max-height: 100%;
+    min-height: 100%;
+    position: relative;
+    overflow-y: scroll;
 }
 
 .registration {
@@ -14,15 +18,20 @@
     height: 480px;
     margin-top: 240px;
     margin-left: 800px;
+
 }
 
 .signPage {
-    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../../www/pictures/signPage.jpg);
     background-color: #c7b39b;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    position: relative;
+    overflow-y: scroll;
 }
 
 .sign {
@@ -42,7 +51,8 @@
     background-image: url(../../www/pictures/registrationPage.jpg);
     background-attachment: fixed;
     background-color: #c7b39b;
-    overflow: hidden;
+    overflow: scroll;
+    position: relative;
 }
 
 .adminHelp {
@@ -63,12 +73,14 @@
 .homePage {
     height: 100%;
     min-height: 100%;
+    max-height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../../www/pictures/SpaceForHomePage.jpg);
     background-attachment: fixed, fixed;
     background-color: #c7b39b;
-    overflow: hidden;
+    position: fixed;
+    overflow-y: scroll;
 }
 
 .blockHeader {
@@ -137,7 +149,8 @@
     background-image: url(../../www/pictures/userPage.jpg);
     background-attachment: fixed, fixed;
     background-color: #c7b39b;
-    overflow: hidden;
+    overflow: scroll;
+    position: relative;
 }
 
 .userEditPage {
@@ -148,7 +161,8 @@
     background-image: url(../../www/pictures/userEditPage.jpg);
     background-attachment: fixed, fixed;
     background-color: #c7b39b;
-    overflow: hidden;
+    overflow: scroll;
+    position: relative;
 }
 
 .userPageBlock {
@@ -227,6 +241,7 @@ body {
     height: 100%;
     min-height: 100%;
     background: #ebeff2;
+    overflow: scroll;
 }
 
 .page-wrapper{
@@ -478,8 +493,11 @@ h2.green {
 
 .homeD5
 {
+    display: inline-block;
     position:relative;
     height: 63%;
+    min-height: 10%;
+    max-height: 63%;
     margin-right: 2%;
     margin-left: 2%;
     border-color: blue;
@@ -487,7 +505,6 @@ h2.green {
     border-radius: 12px;
     overflow-y: auto;
     background-color: rgba(254, 254, 254, 0.5);
-
 }
 
 .homed4
@@ -566,8 +583,11 @@ h2.green {
 
 .homeD1
 {
-    left: 70%;
-    top: 3%;
+    float: right;
+    display: inline-block;
+   
+    margin-top: 1%;
+    margin-right: 2%;
     position: relative;
     width: 140px;
     height: 30px;

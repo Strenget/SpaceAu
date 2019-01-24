@@ -2,7 +2,7 @@
 <div class="homePage">
 	<h1 class="homeH" >Space around us</h1>
 	<div class="blockHeader">
-		<div class="homeI">
+		<div class="homeD1">
 			{if $user->loggedIn}
 				<a n:href="Sign:out" class="homeI2">Log out</a>
 			{else}
@@ -12,10 +12,10 @@
 		<div class="homeD1">
 			<a n:href="Registration:default" class="homeA1">Registration</a>
 		</div>
-		<div class="homeD2">
+		<div class="homeD1">
 			<a n:href="Profile:default" class="homeA2">Profile</a>
 		</div>
-		<div class="homeD3">
+		<div class="homeD1">
 			<a n:href="Administration:default" class="homeA3">Create new post</a>
 		</div>
 	</div>
@@ -55,6 +55,13 @@
 
 
 </div>
+	<style>
+		.buttonNew
+		{
+			display: inline-block;
+
+		}
+	</style>
 {/block}
 
 
