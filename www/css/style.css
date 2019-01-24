@@ -77,9 +77,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../../www/pictures/SpaceForHomePage.jpg);
-    background-attachment: fixed, fixed;
+    background-attachment: fixed;
     background-color: #c7b39b;
-    position: fixed;
     overflow-y: scroll;
 }
 
@@ -493,7 +492,6 @@ h2.green {
 
 .homeD5
 {
-    display: inline-block;
     position:relative;
     height: 63%;
     min-height: 10%;
@@ -585,7 +583,6 @@ h2.green {
 {
     float: right;
     display: inline-block;
-   
     margin-top: 1%;
     margin-right: 2%;
     position: relative;
